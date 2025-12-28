@@ -171,15 +171,15 @@ export function Hero() {
                 className="flex items-center justify-center md:justify-start gap-3 mb-6 md:mb-8"
               >
                 {[
-                  { icon: Github, href: "https://github.com", label: "GitHub" },
+                  { icon: Github, href: "https://github.com/zaryabali001", label: "GitHub" },
                   {
                     icon: Linkedin,
-                    href: "https://linkedin.com",
+                    href: "https://www.linkedin.com/in/mzaryabali/",
                     label: "LinkedIn",
                   },
                   {
                     icon: Mail,
-                    href: "mailto:john@example.com",
+                    href: "azaryab820@gmail.com",
                     label: "Email",
                   },
                 ].map((social, index) => {
