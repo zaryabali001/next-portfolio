@@ -4,7 +4,7 @@ import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { useState } from "react";
-// import { ImageWithFallback } from "./figma/ImageWithFallback";
+import Image from "next/image";
 
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -24,7 +24,7 @@ export function Projects() {
     {
       title: "Hotel Booking App",
       description: "",
-      image: "",
+      image: "/hotel.png",
       tags: ["JavaScript", "React", "Tailwind"],
       category: "Machine Learning",
       github: "",
@@ -33,7 +33,7 @@ export function Projects() {
     {
       title: "GSAP Awwwards Website",
       description: "",
-      image: "",
+      image: "/awwards-CFh_on9N.png",
       tags: ["JavaScript", "React", "Tailwind", "GSAP"],
       category: "React",
       github: "https://awwwards-website-clone.netlify.app/",
@@ -42,16 +42,15 @@ export function Projects() {
     {
       title: "Food Delivery App",
       description: "",
-      image: "",
+      image: "/foodApp-CFmvF5j-.png",
       tags: ["JavaScript", "React", "Tailwind"],
       category: "Cloud",
       github: "https://food-delivery-react-00.netlify.app/",
     },
-    
     {
       title: "Tour Guide (AI Powered)",
       description: "",
-      image: "",
+      image: "/tour-BmyhTLRr.png",
       tags: ["React", "Next" , "Node", "OpenAi", "Redux", "Google Maps","MongoDB","Clerk" ],
       category: "React",
       github: "https://github.com/zaryabali001/fyp2",
@@ -59,47 +58,47 @@ export function Projects() {
     {
       title: "ai-imaging diagnos",
       description: "",
-      image: "",
+      image: "/ai-imaging.png ",
       tags: ["TypeScript", "Next", "Tailwind", "APIs"],
       category: "Next",
       github: "https://github.com/zaryabali001/ai-imaging",
-      demo: "https://ai-imaging-vt81.vercel.app/  "
+      demo: "https://ai-imaging-vt81.vercel.app/"
     },
     {
       title: "video-generation (Veo3 Clone)",
       description: "",
-      image: "",
+      image: "/ve03.png",
       tags: ["TypeScript", "Next", "Tailwind", "APIs"],
       category: "Next",
       github: "https://github.com/zaryabali001/video-generation",
-       demo: "https://video-generation-three.vercel.app/"
+      demo: "https://video-generation-three.vercel.app/"
     },
     {
-      title: "recursive-safeguard-updated ",
+      title: "recursive-safeguard-updated",
       description: "",
-      image: "",
-      tags: ["TypeScript", "Next", "Tailwind", ],
+      image: "/safeguard.png",
+      tags: ["TypeScript", "Next", "Tailwind"],
       category: "Next",
       github: "https://github.com/zaryabali001/recursive-safeguard-updated",
-       demo: "https://recursive-safeguard-fxlt.vercel.app/"
+      demo: "https://recursive-safeguard-fxlt.vercel.app/"
     },
     {
       title: "Styleframe Awwwards Clone",
       description: "",
-      image: "",
+      image: "/styleframe.png",
       tags: ["TypeScript", "Next", "Tailwind", "GSAP"],
       category: "Next",
       github: "",
-       demo: "https://recursive-safeguard-fxlt.vercel.app/"
+      demo: "https://recursive-safeguard-fxlt.vercel.app/"
     },
     {
       title: "Dr-patient",
       description: "",
-      image: "",
+      image: "/dr.png",
       tags: ["TypeScript", "Next", "Tailwind", "APIs"],
       category: "Next",
       github: "https://github.com/zaryabali001/updated-code",
-       demo: "https://updated-code-6myr.vercel.app/"
+      demo: "https://updated-code-6myr.vercel.app/"
     },
   ];
 
@@ -150,11 +149,18 @@ export function Projects() {
                 className="bg-card border-border hover:border-primary/50 transition-all overflow-hidden group"
               >
                 <div className="relative h-48 overflow-hidden">
-                  {/* <ImageWithFallback
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  /> */}
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-300"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400">
+                      No Image
+                    </div>
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
                 <div className="p-6">
