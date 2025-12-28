@@ -6,17 +6,17 @@ export function Skills() {
   const skillCategories = [
     {
       icon: Code,
-      title: "Languages & Frameworks",
+      title: "Frameworks",
       skills: [
-        { name: "JavaScript / TypeScript", level: 95 },
-        { name: "React / Next.js", level: 90 },
-        { name: "Node.js / Express", level: 88 },
-        { name: "Python", level: 80 },
+        { name: "  React", level: 85 },
+        { name: " Next.js", level: 90 },
+        { name: " Tailwind CSS", level: 88 },
+        { name: " Node.js", level: 70 },
       ],
     },
     {
       icon: Database,
-      title: "Databases",
+      title: "Languages & Databases",
       skills: [
         { name: "PostgreSQL", level: 85 },
         { name: "MongoDB", level: 82 },
@@ -26,12 +26,12 @@ export function Skills() {
     },
     {
       icon: Cloud,
-      title: "Cloud & DevOps",
+      title: "Design & development Tools",
       skills: [
-        { name: "AWS (Lambda, EC2, S3)", level: 88 },
-        { name: "Docker / Kubernetes", level: 85 },
-        { name: "CI/CD (GitHub Actions)", level: 90 },
-        { name: "Terraform", level: 75 },
+        { name: "Figma", level: 88 },
+        { name: "Wordpress development", level: 95 },
+        { name: "Plugin Development", level: 50 },
+        { name: "Shopify", level: 75 },
       ],
     },
     {
@@ -41,20 +41,19 @@ export function Skills() {
         { name: "Git / GitHub", level: 95 },
         { name: "VS Code", level: 95 },
         { name: "Figma", level: 85 },
-        { name: "Jira / Agile", level: 88 },
+        { name: "GSAP", level: 85 },
       ],
     },
   ];
 
   const otherSkills = [
-    "REST APIs",
-    "GraphQL",
-    "Microservices",
-    "TDD / Unit Testing",
-    "Web Performance",
-    "Security Best Practices",
-    "Code Review",
-    "Technical Documentation",
+    "team collaboration",
+    "Problem-solving",
+    "Communication",    
+    "Time management",
+    "Adaptability",
+    "Critical thinking",
+    "Creativity",
   ];
 
   return (

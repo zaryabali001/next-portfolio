@@ -31,26 +31,24 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "john.doe@example.com",
+      value: "azaryab820@gmail.com",
       link: "mailto:john.doe@example.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+92 309 0270809",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Rawalpindi, Pakistan",
     },
   ];
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", link: "https://github.com" },
-    { icon: Linkedin, label: "LinkedIn", link: "https://linkedin.com" },
-    { icon: Twitter, label: "Twitter", link: "https://twitter.com" },
+    { icon: Github, label: "GitHub", link: "https://github.com/zaryabali001" },
+    { icon: Linkedin, label: "LinkedIn", link: "https://www.linkedin.com/in/mzaryabali/" },
   ];
 
   return (

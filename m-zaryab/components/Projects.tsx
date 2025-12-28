@@ -9,65 +9,97 @@ import { useState } from "react";
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const filters = ["All", "React", "Python", "Cloud", "Machine Learning"];
+  const filters = ["All", "React", "figma", "Next", "wordpress"];
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description:
-        "A full-stack web application for online retail, featuring product management, user authentication, and a Stripe-integrated checkout process.",
-      image: "https://images.unsplash.com/photo-1658297063569-162817482fb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBvbmxpbmUlMjBzaG9wcGluZ3xlbnwxfHx8fDE3NjQwOTgzMjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["TypeScript", "React", "Node.js", "PostgreSQL"],
+      title: "Doctor Appointment Booking System",
+      description: "",
+      image: "/doctor.png",
+      tags: ["JavaScript", "React", "Tailwind"],
       category: "React",
-      github: "https://github.com",
-      demo: "https://example.com",
+      github: "https://github.com/zaryabali001/Doctors-managemant-system-MERN",
+      demo: "https://prescripto.vercel.app/"
     },
     {
-      title: "Customer Churn Predictor",
-      description:
-        "A machine learning model to predict customer churn, built with Scikit-learn and deployed as a REST API using Flask.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2NDA0OTQ0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["Python", "Scikit-learn", "Flask"],
+      title: "Hotel Booking App",
+      description: "",
+      image: "",
+      tags: ["JavaScript", "React", "Tailwind"],
       category: "Machine Learning",
-      github: "https://github.com",
+      github: "",
+      demo: "https://hb-gs.vercel.app/",
     },
     {
-      title: "Mobile Task Manager",
-      description:
-        "A cross-platform app for managing daily tasks, featuring offline support and real-time synchronization with a Firebase backend.",
-      image: "https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY0MDE2NDQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["React Native", "Firebase"],
+      title: "GSAP Awwwards Website",
+      description: "",
+      image: "",
+      tags: ["JavaScript", "React", "Tailwind", "GSAP"],
       category: "React",
-      github: "https://github.com",
-      demo: "https://example.com",
+      github: "https://awwwards-website-clone.netlify.app/",
+      demo: "https://github.com/zaryabali001/GSAP-Awwwards-Website-main",
     },
     {
-      title: "Serverless API on AWS",
-      description:
-        "A highly scalable, cost-efficient REST API built with AWS Lambda, API Gateway, and DynamoDB for a data processing pipeline.",
-      image: "https://images.unsplash.com/photo-1667984390538-3dea7a3fe33d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY0MDQ1Mzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["AWS Lambda", "DynamoDB"],
+      title: "Food Delivery App",
+      description: "",
+      image: "",
+      tags: ["JavaScript", "React", "Tailwind"],
       category: "Cloud",
-      github: "https://github.com",
+      github: "https://food-delivery-react-00.netlify.app/",
+    },
+    
+    {
+      title: "Tour Guide (AI Powered)",
+      description: "",
+      image: "",
+      tags: ["React", "Next" , "Node", "OpenAi", "Redux", "Google Maps","MongoDB","Clerk" ],
+      category: "React",
+      github: "https://github.com/zaryabali001/fyp2",
     },
     {
-      title: "Open Source Contribution",
-      description:
-        "Contributed a new feature to a popular open-source library, improving performance and adding new functionality. The PR was successfully merged.",
-      image: "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RlJTIwcHJvZ3JhbW1pbmclMjBzY3JlZW58ZW58MXx8fHwxNzY0MDk0MDg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["TypeScript", "Open Source"],
-      category: "React",
-      github: "https://github.com",
+      title: "ai-imaging diagnos",
+      description: "",
+      image: "",
+      tags: ["TypeScript", "Next", "Tailwind", "APIs"],
+      category: "Next",
+      github: "https://github.com/zaryabali001/ai-imaging",
+      demo: "https://ai-imaging-vt81.vercel.app/  "
     },
     {
-      title: "Interactive Data Map",
-      description:
-        "A web-based tool for visualizing geographical data using D3.js and React, featuring interactive filters and real-time updates.",
-      image: "https://images.unsplash.com/photo-1626695436755-3e288720849c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b3JsZCUyMG1hcCUyMGdsb2JlfGVufDF8fHx8MTc2NDA5ODMyOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["React", "D3.js"],
-      category: "React",
-      github: "https://github.com",
-      demo: "https://example.com",
+      title: "video-generation (Veo3 Clone)",
+      description: "",
+      image: "",
+      tags: ["TypeScript", "Next", "Tailwind", "APIs"],
+      category: "Next",
+      github: "https://github.com/zaryabali001/video-generation",
+       demo: "https://video-generation-three.vercel.app/"
+    },
+    {
+      title: "recursive-safeguard-updated ",
+      description: "",
+      image: "",
+      tags: ["TypeScript", "Next", "Tailwind", ],
+      category: "Next",
+      github: "https://github.com/zaryabali001/recursive-safeguard-updated",
+       demo: "https://recursive-safeguard-fxlt.vercel.app/"
+    },
+    {
+      title: "Styleframe Awwwards Clone",
+      description: "",
+      image: "",
+      tags: ["TypeScript", "Next", "Tailwind", "GSAP"],
+      category: "Next",
+      github: "",
+       demo: "https://recursive-safeguard-fxlt.vercel.app/"
+    },
+    {
+      title: "Dr-patient",
+      description: "",
+      image: "",
+      tags: ["TypeScript", "Next", "Tailwind", "APIs"],
+      category: "Next",
+      github: "https://github.com/zaryabali001/updated-code",
+       demo: "https://updated-code-6myr.vercel.app/"
     },
   ];
 
@@ -87,8 +119,8 @@ export function Projects() {
             </span>
             <h2 className="text-4xl md:text-5xl mb-4">Featured Work</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-              A selection of my recent work, from full-stack web applications to data science
-              models and open-source contributions
+              A selection of my recent work, from full-stack web applications to
+              data science models and open-source contributions
             </p>
 
             {/* Filters */}
@@ -127,7 +159,9 @@ export function Projects() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl mb-2">{project.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {project.description}
+                  </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, i) => (
                       <Badge
