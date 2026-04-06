@@ -37,7 +37,7 @@ export function Projects() {
       tags: ["JavaScript", "React", "Tailwind", "GSAP"],
       category: "React",
       github: "https://awwwards-website-clone.netlify.app/",
-      demo: "https://github.com/zaryabali001/GSAP-Awwwards-Website-main",
+      demo: "https://gsap-awwwards-website-main.vercel.app/",
     },
     {
       title: "Food Delivery App",
