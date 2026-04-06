@@ -19,7 +19,7 @@ export function Footer() {
             <div className="md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <Code2 className="w-6 h-6 text-primary" />
-                <span className="text-xl">John Doe</span>
+                <span className="text-xl">M Zaryab</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Building exceptional digital experiences with modern technologies.
@@ -97,7 +97,7 @@ export function Footer() {
                     href="mailto:john.doe@example.com"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
-                    john.doe@example.com
+                    azaryab820@gmail.com
                   </a>
                 </li>
                 <li>
@@ -105,10 +105,10 @@ export function Footer() {
                     href="tel:+15551234567"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (555) 123-4567
+                    +92 (309) 0270809
                   </a>
                 </li>
-                <li className="text-sm text-muted-foreground">San Francisco, CA</li>
+                <li className="text-sm text-muted-foreground">Islamabad , Rawalpindi</li>
               </ul>
             </div>
           </div>
@@ -117,7 +117,7 @@ export function Footer() {
           <div className="pt-8 border-t border-border">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-sm text-muted-foreground text-center md:text-left">
-                © {currentYear} John Doe. All rights reserved.
+                © {currentYear} M Zaryab. All rights reserved.
               </p>
               <div className="flex items-center gap-1 text-sm text-muted-foreground">
                 <span>Made with</span>
