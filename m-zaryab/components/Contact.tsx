@@ -32,7 +32,7 @@ export function Contact() {
       icon: Mail,
       label: "Email",
       value: "azaryab820@gmail.com",
-      link: "mailto:john.doe@example.com",
+      link: "",
     },
     {
       icon: Phone,
@@ -153,7 +153,7 @@ export function Contact() {
                         id="name"
                         name="name"
                         type="text"
-                        placeholder="John Doe"
+                        placeholder=" Doe"
                         value={formData.name}
                         onChange={handleChange}
                         required
